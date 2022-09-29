@@ -34,7 +34,7 @@ let score = 0;
 // Greet user with user input
 function greeting() {
     headerText.innerHTML = ""
-    headerText.innerHTML = "Hello " + userName.value + ", welcome to my Quiz!"
+    headerText.innerHTML = "Hello " + userName.value + "," + " welcome to my Quiz!"
     greetingInput.style.display = "none"
     beginner.classList.remove('hide');
     intermediate.classList.remove('hide');
@@ -187,7 +187,7 @@ function checkAnswer(answers){
     let quizQuestions = [
     // Beginner questions
     {
-        question: "Question 1/15: What is the color of an apple in Māori?",
+        question: "Question 1/15:What is the color of an apple in Māori?",
         option1: "Kōwhai",
         option2: "Kikorangi",
         option3: "Whero",
