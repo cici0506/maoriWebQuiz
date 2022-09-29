@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Te Reo Maori Quiz</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+
+    <body>
+        <div class="homepage" id="homepage">
+            <h1>Welcome to my Te Reo Māori Quiz</h1>  
+        </div>
+            <h2 id="headerText">What is your name?</h2> <br>
+        
+    <div id="greetingInput">
+        <input id="userName"> <br> <br>
+        <button onclick="greeting()">Submit</button>
+    </div>
+
+    <div id="difficulty" class="difficulty-btns">
+        <button class="beginner hide" id="beginner" type="button" >
+            <h3>Beginner Level</h3>
+        </button>
+    <br>
+    <br>
+        <button class="intermediate hide" id="intermediate" type="button">
+            <h3>Intermediate Level</h3>
+        </button>
+    <br>
+    <br>
+        <button class="advanced hide" id="advanced" type="button">
+            <h3>Advanced Level</h3>
+        </button>
+    </div>
+
+        <div class="w3Container hide" id="w3Container">
+          <div id="myBar">0%</div>
+        </div>
+
+<div class="container hide" id="container">
+    <div class="questionsPage hide" id="questionsPage">
+        <div class="question" id="question"></div> 
+            <div  class="answerOptions" id="answers">
+                <button class="optionAnswer" id="option1" onclick="checkAnswer('option1')">Answer 1</button>
+                <button class="optionAnswer"id="option2" onclick="checkAnswer('option2')">Answer 2</button>
+                <button class="optionAnswer"id="option3" onclick="checkAnswer('option3')">Answer 3</button>
+                <button class="optionAnswer"id="option4" onclick="checkAnswer('option4')">Answer 4</button>
+            </div>
+    </div>
+    <div class="correct hide" id="correct">Correct!</div>
+    <div class="incorrect hide" id="incorrect">Incorrect!</div>
+</div>
+
+    <div class="controls">
+        <button class="nextBtn hide" id="nextBtn" onclick="nextQuestion(); move()">Next</button>
+        <button id="restartBtn" class="restartBtn hide"><strong>Restart</strong></button>
+    </div>
+
+            <div class="endScreen hide" id="endPage">
+                <div class="endMessage">
+                    Congratulations! You have completed the quiz!<br><br>You got:<br>
+                </div>
+                <div class="score" id="score"></div> 
+                <br>
+                <div class="endMsg" id="endMsg"></div>
+            </div>
+
+        <script src="script1.js"></script>
+
+    </body>
+    
+    </html>
