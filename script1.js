@@ -27,8 +27,7 @@ beginner.addEventListener("click", startBeginnerQuiz);
 intermediate.addEventListener("click", startIntermediateQuiz);
 advanced.addEventListener("click", startAdvancedQuiz);
 
-let iterationNumber, lastQuestion;
-lastQuestion = lastQuestion - 1;
+let iterationNumber;
 let score = 0;
 
 // Greet user with user input
