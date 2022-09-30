@@ -1,3 +1,4 @@
+// Class variables
 const greetingInput = document.querySelector("#greetingInput");
 const homepage = document.getElementById("homepage");
 const questionsPage = document.getElementById("questionsPage");
@@ -20,13 +21,14 @@ var elem = document.getElementById("myBar");
 var width = 1;
 var id = null;
 var click = false;
-
 const maxQuestions = 15;
 
+// Difficulty buttons
 beginner.addEventListener("click", startBeginnerQuiz);
 intermediate.addEventListener("click", startIntermediateQuiz);
 advanced.addEventListener("click", startAdvancedQuiz);
 
+// Question number and score
 let iterationNumber;
 let score = 0;
 
@@ -133,6 +135,7 @@ function checkAnswer(answers){
         showQuestions();
     };
 
+    // Progress
     function move() {
         if(!click){
         click = true;
